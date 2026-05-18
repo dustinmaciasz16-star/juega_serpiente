@@ -1,0 +1,258 @@
+body{
+
+  background:
+  linear-gradient(
+    135deg,
+    #0f172a,
+    #111827,
+    #1e293b
+  );
+
+  min-height: 100vh;
+
+  color: white;
+
+  font-family:
+  "Segoe UI",
+  sans-serif;
+
+}
+
+.titulo{
+
+  font-size: 3rem;
+
+  font-weight: bold;
+
+  margin-bottom: 10px;
+
+}
+
+.subtitulo{
+
+  color: #cbd5e1;
+
+  font-size: 1.1rem;
+
+}
+
+.card-info{
+
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  border-radius: 18px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  transition: 0.3s;
+
+  height: 100%;
+
+}
+
+.card-info:hover{
+
+  transform: translateY(-5px);
+
+  background: rgba(255,255,255,0.12);
+
+}
+
+.card-info span{
+
+  display: block;
+
+  color: #cbd5e1;
+
+  margin-bottom: 5px;
+
+}
+
+.card-info strong{
+
+  font-size: 1.6rem;
+
+}
+
+.link-card{
+
+  text-decoration: none;
+
+  color: white;
+
+}
+
+.card-link{
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-weight: bold;
+
+  font-size: 1.1rem;
+
+}
+
+.zona-juego{
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+#canvasJuego{
+
+  background: #0b1220;
+
+  border-radius: 25px;
+
+  border: 4px solid rgba(255,255,255,0.1);
+
+  box-shadow:
+  0 0 30px rgba(0,0,0,0.5);
+
+  max-width: 100%;
+
+}
+
+.controles{
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 10px;
+
+}
+
+.fila-control{
+
+  display: flex;
+
+  gap: 10px;
+
+}
+
+.controles button{
+
+  width: 70px;
+
+  height: 70px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.08);
+
+  color: white;
+
+  font-size: 1.5rem;
+
+  transition: 0.2s;
+
+}
+
+.controles button:hover{
+
+  transform: scale(1.08);
+
+  background: rgba(255,255,255,0.15);
+
+}
+
+.vacio{
+
+  visibility: hidden;
+
+}
+
+.acciones{
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+}
+
+.btn-jugar,
+.btn-reiniciar{
+
+  border: none;
+
+  padding: 14px 30px;
+
+  border-radius: 15px;
+
+  font-size: 1rem;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+
+}
+
+.btn-jugar{
+
+  background: #22c55e;
+
+  color: white;
+
+}
+
+.btn-reiniciar{
+
+  background: #ef4444;
+
+  color: white;
+
+}
+
+.btn-jugar:hover,
+.btn-reiniciar:hover{
+
+  transform: translateY(-3px);
+
+}
+
+.mensaje{
+
+  color: #cbd5e1;
+
+  font-size: 1rem;
+
+}
+
+@media(max-width:768px){
+
+  .titulo{
+
+    font-size: 2.2rem;
+
+  }
+
+  .controles button{
+
+    width: 60px;
+
+    height: 60px;
+
+  }
+
+}
